@@ -40,7 +40,7 @@ class NewsBloc extends Bloc<NewsEvent, NewsState> {
     try {
       await launchUrlString(event.url);
     } catch (e) {
-      print(e);
+      e;
     }
   }
 
